@@ -6,15 +6,18 @@
 * Author: heymiguel
 * Author URI: http://heymiguel.com
 */
-
+@import 'normalize';
+@import	'variables';
 @import 'bourbon/bourbon';
 @import 'neat/neat';
-@import 'normalize';
+@import 'homePage';
+
 @import 'typography';
 @import 'navigation';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+
 
 
 /*
@@ -28,18 +31,16 @@ img {
 }
 
 body {
-	color: #333;
+	margin:0;
 }
 
 .container {
-	max-width: 1200px;
+	
 	margin: 0 auto;
 }
 
 .content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
+	
 }
 
 .full {

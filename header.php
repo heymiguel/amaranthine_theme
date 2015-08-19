@@ -16,18 +16,29 @@
 
 <body <?php body_class(); ?>>
 
-<header>
+<header class="clearfix">
   <div class="container">
-    <h1>
-      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-        <?php bloginfo( 'name' ); ?>
-      </a>
-    </h1>
 
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_locations' => 'primary'
-    )); ?>
+  <div class="navLogo"> <!-- Start of customizable logo (top left corner) -->
+      <?php if ( get_theme_mod( 'amaranthine_logo' ) ) : ?>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="site-logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">             
+          <img src="<?php echo get_theme_mod( 'amaranthine_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+        </a>
+        <?php else : ?> <!-- NEED TO FIGURE OUT HOW TO HIDE TEXT IF IMAGE ISNT PRESENT -->
+        <h1>
+          <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+            <?php bloginfo( 'name' ); ?>
+          </a>
+        </h1>
+      <?php endif; ?> 
+        <?php wp_nav_menu( array(
+          'container' => false,
+          'theme_locations' => 'primary'
+        )); ?>
+      </div>
+  </div> <!-- End of customizable logo -->
+      <div class="menuBar clearfix">
+
   </div> <!-- /.container -->
 </header><!--/.header-->
 

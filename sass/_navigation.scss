@@ -1,14 +1,40 @@
+
+
 ul.menu {
 	margin: 0;
 	padding: 0;
+	float: right;
 	li {
 		display: inline;
-		margin-right: 10px;
+		margin-right: 0px;
 		a {
 			color: #333;
-			padding: 10px;
+			padding: 0px;
 			background: #333;
 			color: white;
 		}
 	}
 }
+
+header {
+		width: 50vw;
+		background: $maincolor;
+		position: fixed;
+		z-index: 100;
+
+	.navLogo{
+		
+		img{
+			max-width: 75px;
+		}
+
+		.container{
+		width: 100%;
+			ul{
+				padding: 0px;
+				margin: 0px;
+			}		
+		}	
+	}
+}
+

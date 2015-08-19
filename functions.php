@@ -266,3 +266,17 @@ function get_post_parent($post) {
 		return $post->ID;
 	}
 }
+
+// custom stuff
+function amaranthine_customize_register( $wp_customize ) {
+    $wp_customize->add_setting( 'amaranthine_logo' ); // Add setting for logo uploader
+         
+    // Add control for logo uploader (actual uploader)
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'amaranthine_logo', array(
+        'label'    => __( 'Upload Logo (replaces text)', 'amaranthine' ),
+        'section'  => 'title_tagline',
+        'settings' => 'amaranthine_logo',
+    ) ) );
+}
+
+add_action( 'customize_register', 'amaranthine_customize_register' );
