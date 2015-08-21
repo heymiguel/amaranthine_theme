@@ -22,15 +22,15 @@
 			 <div class="leftBlog">
 				<div class="redTextLeft">
 								<?php 
-								$portfolioHeaderQuery = new WP_Query(
+								$blogHeaderQuery = new WP_Query(
 				        			            array(
 				        			              'post_type' => 'customheader'
 				        			            )
 				        			          );
 				        			         ?>
 
-				        			         <?php if ($portfolioHeaderQuery->have_posts()): ?>
-				        			            <?php while ($portfolioHeaderQuery->have_posts()) : $portfolioHeaderQuery->the_post(); ?>
+				        			         <?php if ($blogHeaderQuery->have_posts()): ?>
+				        			            <?php while ($blogHeaderQuery->have_posts()) : $blogHeaderQuery->the_post(); ?>
 				        							<h2><?php the_title(); ?></h2>
 				        							<p><?php the_content(); ?></p>
 				        			            <?php endwhile; ?>
