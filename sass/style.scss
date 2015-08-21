@@ -11,13 +11,12 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 @import 'homePage';
-
 @import 'typography';
 @import 'navigation';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
-
+@import 'blog';
 
 
 /*
@@ -32,6 +31,7 @@ img {
 
 body {
 	margin:0;
+	font-family: 'lato', sans-serif;
 }
 
 .container {
@@ -46,6 +46,8 @@ body {
 .full {
 	width: 100%;
 }
+
+
 
 
 

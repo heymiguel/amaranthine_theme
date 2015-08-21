@@ -6,16 +6,20 @@
 }
 
 .leftSide{
-	width: 50vw;
-	height: 100vh;
-	background: goldenrod;
-	float: left;
-	position: fixed;
-	top:0;
+	@include left-format;
+	background: url(https://placeimg.com/700/1000/tech) no-repeat;
+	background-size: cover;
 }
 .rightSide{
-	width: 50vw;
-	height: 90vh;
-	background: white;
-	float: right;
+	@include outer-container;
+	@include right-format;
+	
+	.mainMessage{
+		@include emphasis-text;
+	}
+	footer{
+		position: fixed;
+		right: 0;
+		bottom: 0;
+	}
 }

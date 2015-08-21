@@ -1,5 +1,6 @@
 <footer>
   <div class="container">
+  photo and layout credit goes here
   </div>
 </footer>
 

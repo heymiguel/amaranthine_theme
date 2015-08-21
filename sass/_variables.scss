@@ -2,3 +2,40 @@
 $maincolor:#B22222;
 $firebrick_rgb: rgb(178,34,34);
 
+// mixins
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin left-format{
+	width: 50vw;
+	height: 100vh;
+	position: fixed;
+	top:0;
+	@include outer-container;
+}
+
+@mixin right-format{
+	width: 50vw;
+	height: 90vh;
+	background: white;
+	margin-left: 50vw;
+	margin-top: 10vh;
+	float: left;
+}
+
+@mixin emphasis-text{
+	@include span-columns(8);
+	@include shift(2);
+	@include vertical-align;
+	h2{
+		text-transform: uppercase;
+		font-size: 3.5em;
+		font-family: Raleway;
+	}
+}

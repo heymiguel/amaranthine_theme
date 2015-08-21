@@ -7,12 +7,18 @@ get_header(); ?>
 
 <div class="rightSide">
 				<!-- //intro blurb goes here -->
+				<div class="mainMessage">
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-				<h2><?php the_title(); ?></h2>
-		      right
+					<!-- content starts here -->
 
-		      <?php the_content(); ?>
-		      <?php endwhile; // end the loop?>
+						<h2><?php the_title(); ?></h2>
+		      				<?php the_content(); ?>
+
+				
+		      		<!-- content ends here -->
+		      	<?php endwhile; // end the loop?>
+		      	</div>
+<?php get_footer(); ?> 
 </div>
 			
 <div class="wrapper clearfix">
@@ -20,13 +26,14 @@ get_header(); ?>
 
 	  <div class="mainSection clearfix">
 
-	    <?php // Start the loop ?>
+	    
 	    
 
 			 <div class="leftSide">
 			  	<!-- //background image needed -->
 				<!-- // -->
 				more words
+
 			</div>
 
 	    
@@ -35,4 +42,3 @@ get_header(); ?>
 	</div> <!-- /.main -->
 </div> <!-- wrapper -->
 
-<?php get_footer(); ?> 

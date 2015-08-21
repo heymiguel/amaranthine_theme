@@ -1,0 +1,52 @@
+.leftBlog{
+	@include left-format;
+	background: $maincolor;
+	color: white;
+	.redTextLeft{
+	@include emphasis-text;
+		
+	}
+}
+
+.rightBlog{
+		@include right-format;
+		.blogPosts{
+			.content{
+				@include span-columns(8);
+				@include shift(2);
+
+				.post{
+					margin-bottom: 8%;
+					footer{
+						a{
+							color: $maincolor;
+							font-size: 12px;
+						}
+				}
+			 	.entry-title{
+			 		font-family: 'lato', sans-serif;
+			 		font-weight: 500;
+			 		color: black;
+			 		padding: 4%;
+			 		padding-left: 0;
+			 		padding-bottom: 1%;
+			 		border-bottom: $maincolor 2px solid;
+			 			a{
+							color: black;
+							
+						}
+			 	}
+			 	.entry-content{
+			 		font-family: 'lato', sans-serif;
+			 		font-weight: 300;
+			 		line-height: 1.4em;
+			 		margin-top: 1%;
+			 	}
+
+			 	footer{
+			 		
+			 	}
+			}
+		}	
+	}
+}
