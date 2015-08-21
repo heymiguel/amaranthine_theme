@@ -1,0 +1,47 @@
+//base styling for archived slash all posts
+
+.leftSide{
+	@include left-format;
+	background: none;
+	background: $maincolor;
+	color: white;
+	.redTextLeft{
+	@include emphasis-text;
+		
+	}
+}
+
+.rightPortfolio{
+		@include right-format;
+		.portfolioItems
+			.content{
+				@include span-columns(8);
+				@include shift(2);
+
+		
+				}
+			 	.entry-title{
+			 		font-family: 'lato', sans-serif;
+			 		font-weight: 500;
+			 		color: black;
+			 		padding: 4%;
+			 		padding-left: 0;
+			 		padding-bottom: 1%;
+			 		border-bottom: $maincolor 2px solid;
+			 			a{
+							color: black;
+						}
+			 	}
+			 	.entry-content{
+			 		font-family: 'lato', sans-serif;
+			 		font-weight: 300;
+			 		line-height: 1.4em;
+			 		margin-top: 1%;
+			 	}
+
+			 	footer{
+			 		position: fixed;
+			 		right: 0;
+			 		bottom: 0;
+			 	}
+			}
