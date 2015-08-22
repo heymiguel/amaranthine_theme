@@ -6,7 +6,7 @@
 		<h1 class="entry-title">Not Found</h1>
 		<section class="entry-content">
 			<p>Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.</p>
-			<?php get_search_form(); ?>
+			<!-- <?php get_search_form(); ?> -->
 		</section><!-- .entry-content -->
 	</article><!-- #post-0 -->
 

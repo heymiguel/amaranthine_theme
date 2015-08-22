@@ -41,3 +41,13 @@ $firebrick_rgb: rgb(178,34,34);
 		font-family: Raleway;
 	}
 }
+
+@mixin cssTriangle{
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 10px solid $maincolor;
+	border-right: 10px solid $maincolor;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid transparent;
+}

@@ -1,11 +1,9 @@
 
 <?php 
 
-
-
 get_header(); ?>
 
-<div class="rightPortfolio">
+<div class="rightSingle">
   <div class="portfolioItems">
 
     <div class="content">
@@ -15,13 +13,13 @@ get_header(); ?>
           <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <h1 class="entry-title"><?php the_title(); ?></h1>
 
-            <div class="entry-meta">
-              <?php hackeryou_posted_on(); ?>
-            </div><!-- .entry-meta -->
+            <!-- <div class="entry-meta"> -->
+              <!-- <?php hackeryou_posted_on(); ?> -->
+            <!-- </div> --><!-- .entry-meta -->
 
             <div class="entry-content">
               <?php the_content(); ?>
-              <?php the_field('item_photo'); ?>
+              <?php ?>
               <?php wp_link_pages(array(
                 'before' => '<div class="page-link"> Pages: ',
                 'after' => '</div>'
@@ -29,7 +27,7 @@ get_header(); ?>
             </div><!-- .entry-content -->
 
             <div class="entry-utility">
-              <?php hackeryou_posted_in(); ?>
+              <!-- <?php hackeryou_posted_in(); ?> -->
               <?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
             </div><!-- .entry-utility -->
           </div><!-- #post-## -->
@@ -48,3 +46,18 @@ get_header(); ?>
     <?php get_footer(); ?>
   </div>
 </div> <!-- /.main -->
+<div class="wrapper clearfix">
+  <div class="main">
+
+    <div class="mainSection clearfix">
+
+       <div class="leftSingle" style="background-image: url('<?php the_field('item_photo'); ?>')">
+          <div class="redTextLeft">
+           
+          </div>
+      </div>
+      
+    </div> <!-- /.container -->
+
+  </div> <!-- /.main -->
+</div> <!-- wrapper -->

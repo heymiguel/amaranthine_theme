@@ -21,7 +21,7 @@ get_header(); ?>
 
             <div class="entry-content">
               <img src="<?php the_field('item_photo'); ?>">
-              <?php the_content(); ?>
+              <?php the_excerpt(); ?> 
               <?php wp_link_pages(array(
                 'before' => '<div class="page-link"> Pages: ',
                 'after' => '</div>'
@@ -62,7 +62,7 @@ get_header(); ?>
       
       
 
-       <div class="leftSide">
+       <div class="leftPortfolio">
           <div class="redTextLeft">
            <?php 
            $blogHeaderQuery = new WP_Query(

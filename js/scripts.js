@@ -1,3 +1,5 @@
 $(function(){
-	//your jQuery here
+	$( ".contactMe" ).click(function() {
+  		$( ".contactForm" ).slideToggle( "fast" );
+	});
 });

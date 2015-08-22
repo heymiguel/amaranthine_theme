@@ -9,6 +9,13 @@ header {
 		width: 50vw;
 		background: $maincolor;
 		float: left;
+		position: relative;
+
+		.redTriangle{
+			@include cssTriangle;
+			top: 100%;
+			right: 20%;
+		}
 
 		.navLogo {
 			font-family: lato;
@@ -47,13 +54,59 @@ header {
 		//social icon 
 		.socials{
 			margin-top: 2.5%;
+
 			.socialIcons {
 				text-align: right;
 				padding-right: 3.5%;
 				color: black;
 				width: 100%;
-				span{
-					font-size: 12px;
+				button{
+
+				}
+
+				.contactForm{
+					display: none;
+					font-size: .7rem;
+					border: none;
+					:nth-child(5){
+						width: 100%;
+					}
+
+					.wpcf7-form-control{
+						width: 100%;
+						border: none;
+						border-bottom: $maincolor 2px solid;
+					}
+
+					.wpcf7-textarea{
+						height: 5vh;
+						width: 95%;
+					}
+
+					p{
+						text-align: left;
+						float: left;
+						width: 45%;
+						margin-left: 2%;
+					}
+
+					.wpcf7-submit{
+						border: none;
+						border-bottom: $maincolor 2px solid;
+						background:none;
+						width: 35%;
+						padding: 2%;
+						font-weight: bold;
+					}
+
+				}
+
+				//dropdown for contact form
+
+				button{
+					font-size: 14px;
+					background: none;
+					border: none;
 				}
 				.fa{
 

@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+
   
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
@@ -21,7 +22,7 @@
 
 <header class="clearfix">
   <div class="leftHeader">
-
+  <div class="redTriangle"></div>
   <div class="navLogo"> <!-- Start of customizable logo (top left corner) -->
       <?php if ( get_theme_mod( 'amaranthine_logo' ) ) : ?>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="site-logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">             
@@ -42,14 +43,16 @@
   </div> <!-- End of customizable logo -->
       <div class="rightHeader">
       <div class="socials clearfix">
-          
+            
+           
             <div class="socialIcons clearfix">
-            <span>possible email goes here</span>
-                <i class="fa fa-envelope"></i>
+                <button class="contactMe">contact@heymiguel.com</button>
+
                 <i class="fa fa-twitter fa-lg"></i>
-                <i class="fa fa-github-alt fa-lg"></i>
+                <i class="fa fa-code-fork fa-lg"></i>
                 <i class="fa fa-linkedin fa-lg"></i>
                 <i class="fa fa-medium fa-lg"></i>
+                <form class="contactForm"> <?php echo do_shortcode('[contact-form-7 id="76" title="Contact form 1"]'); ?></form>          
             </div>
        </div> 
       </div>

@@ -74,7 +74,6 @@ function hackeryou_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts' );
 
-
 /* Custom Title Tags */
 
 function hackeryou_wp_title( $title, $sep ) {
@@ -116,7 +115,7 @@ add_filter( 'wp_page_menu_args', 'hackeryou_page_menu_args' );
  * Sets the post excerpt length to 40 characters.
  */
 function hackeryou_excerpt_length( $length ) {
-	return 40;
+	return 75;
 }
 add_filter( 'excerpt_length', 'hackeryou_excerpt_length' );
 
@@ -208,7 +207,8 @@ function hackeryou_posted_in() {
 	// Retrieves tag list of current post, separated by commas.
 	$tag_list = get_the_tag_list( '', ', ' );
 	if ( $tag_list ) {
-		$posted_in = 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.';
+		// $posted_in = 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.';
+		$posted_in = 'Tech used: %2$s.';
 	} elseif ( is_object_in_taxonomy( get_post_type(), 'category' ) ) {
 		$posted_in = 'This entry was posted in %1$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.';
 	} else {
