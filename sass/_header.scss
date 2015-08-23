@@ -17,6 +17,9 @@ header {
 			@include cssTriangle;
 			top: 100%;
 			right: 20%;
+			@include wider-than(large){
+				display:none;
+			}
 			@include wider-than(medium){
 				display: none;
 			}
