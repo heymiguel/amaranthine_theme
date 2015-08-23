@@ -21,6 +21,9 @@
 }
 .rightTag{
 	@include right-format;
+	.container{
+		@include hiddenBottomFooter;
+	}
 	@include wider-than(large){
 		margin-left: 0;
 		width: 100%;

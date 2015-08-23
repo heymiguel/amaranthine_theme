@@ -127,7 +127,15 @@ $breakpoints: (
 			color: black;
 			width: 100%;
 			@include wider-than(large){
-				//fix later 
+				 
+				display: none;
+			}
+			@include wider-than(large){
+				
+				display: none;
+			}
+			@include wider-than(large){
+				
 				display: none;
 			}
 			button{
@@ -189,6 +197,27 @@ $breakpoints: (
 			}
 		}
 	}
+
+
+@mixin hiddenBottomFooter {
+	footer{
+		#footerIcons{
+			display: none;
+			position: relative;
+			@include wider-than(large){
+				display: block;
+				button.contactMe{
+					display: inline;
+				}
+				.contactForm{
+					position: absolute;
+					bottom: 2em;
+					background: white;
+				}
+			}
+		}
+	}
+}
 
 
 

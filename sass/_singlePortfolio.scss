@@ -25,6 +25,9 @@
 
 .rightSingle{
 		@include right-format;
+		.container{
+				@include hiddenBottomFooter;
+		}
 		@include wider-than(large){
 			margin-left: 0;
 			width: 100%;
@@ -81,9 +84,7 @@
 					}
 				}
 			 	footer{
-			 		position: fixed;
-			 		right: 0;
-			 		bottom: 0;
+					
 			 	}
 			}
 		}

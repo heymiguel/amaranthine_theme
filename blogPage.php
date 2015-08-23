@@ -15,7 +15,9 @@ get_header();  ?>
     	<?php get_template_part( 'loop', 'blog' );	?>
     </div> <!--/.content -->
   </div> <!-- /.container -->
-  <?php get_footer(); ?>
+  <div class="container">
+  	<?php get_footer(); ?>
+  </div>
 </div> <!-- /.main -->
 
 <div class="wrapper clearfix">

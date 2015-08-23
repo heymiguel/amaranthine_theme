@@ -6,7 +6,9 @@
       		<?php get_template_part( 'loop', 'tag' ); ?>
 		</div>
 	</div>
-	<?php get_footer(); ?>
+	<div class="container">
+		<?php get_footer(); ?>
+	</div>
 </div>
 
 <div class="wrapper clearfix">
@@ -19,7 +21,7 @@
 
 			 <div class="leftTag">
 			 		<div class="redTextLeft">
-						<h2>Done with: <?php single_tag_title(); ?></h2>
+						<h2><?php single_tag_title(); ?></h2>
 					</div>
 			</div>
 
