@@ -1,0 +1,60 @@
+.leftTag{
+	@include left-format;
+	background: $maincolor;
+	color: white;
+	.redTextLeft{
+	@include emphasis-text;
+		
+	}
+}
+.rightTag{
+	@include right-format;
+	footer {
+
+		.footer{
+			display: none;
+		}
+	}
+
+
+	.tagItems{
+		.content{
+			@include span-columns(9);
+			@include shift(2);
+			}
+		 	.entry-title{
+		 		font-family: 'lato', sans-serif;
+		 		font-weight: 500;
+		 		color: white;
+		 		padding: 4%;
+		 		padding-left: 0;
+		 		padding-bottom: 1%;
+		 		border-bottom: $maincolor 2px solid;
+		 		position: relative;
+		 		.redTriangle{
+		 			@include cssTriangle;
+		 			top: 100%;
+					right: 0;
+		 		}
+		 			a{
+						color: black;
+					}
+		 	}
+		 	.entry-content{
+		 		font-family: 'lato', sans-serif;
+		 		font-weight: 300;
+		 		line-height: 1.4em;
+		 	}
+			footer{
+				p:nth-child(1){
+						a{
+							color: white;
+							background: $maincolor;
+							border: $maincolor 2px solid;	
+						}
+			 			
+			 		}
+			}
+		}
+
+}

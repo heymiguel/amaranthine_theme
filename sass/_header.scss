@@ -38,10 +38,11 @@ header {
 
 			li {
 				display: inline;
-				
+				@include hoverUnderlineWhite;
 				a {
 					margin: 10px;
 					color: white;
+
 				}
 			}
 		}	
@@ -56,17 +57,36 @@ header {
 			margin-top: 2.5%;
 
 			.socialIcons {
+
 				text-align: right;
 				padding-right: 3.5%;
 				color: black;
 				width: 100%;
+				
 				button{
+					font-size: 14px;
+					background: none;
+					border: none;
 
+				}:hover{
+					background: $maincolor;
+					color: white;	
+				}
+
+				.fa{
+					padding: 1%;
+					margin-left: 2%;
+					font-size: 18px;
+					
+				}:hover{
+					background: $maincolor;
+					color: white;	
+					transition: all .5s ease-in-out;
 				}
 
 				.contactForm{
 					display: none;
-					font-size: .7rem;
+					font-size: .8rem;
 					border: none;
 					:nth-child(5){
 						width: 100%;
@@ -75,7 +95,7 @@ header {
 					.wpcf7-form-control{
 						width: 100%;
 						border: none;
-						border-bottom: $maincolor 2px solid;
+						border-bottom: $maincolor 1px solid;
 					}
 
 					.wpcf7-textarea{
@@ -91,33 +111,24 @@ header {
 					}
 
 					.wpcf7-submit{
-						border: none;
-						border-bottom: $maincolor 2px solid;
-						background:none;
+						border: $maincolor 2px solid;
+						background:$maincolor;
+						color: white;
 						width: 35%;
 						padding: 2%;
+						margin-top: 1%;
 						font-weight: bold;
 					}
 
 				}
 
-				//dropdown for contact form
 
-				button{
-					font-size: 14px;
-					background: none;
-					border: none;
-				}
-				.fa{
 
-					margin-left: 2%;
-					font-size: 18px;
-				}
+
 			}
 		}
 
 	}	
-
 
 }
 

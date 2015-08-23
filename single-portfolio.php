@@ -15,7 +15,7 @@ get_header(); ?>
 
             <!-- <div class="entry-meta"> -->
               <!-- <?php hackeryou_posted_on(); ?> -->
-            <!-- </div> --><!-- .entry-meta -->
+            <!-- </div>  --><!-- .entry-meta -->
 
             <div class="entry-content">
               <?php the_content(); ?>
@@ -27,7 +27,7 @@ get_header(); ?>
             </div><!-- .entry-content -->
 
             <div class="entry-utility">
-              <!-- <?php hackeryou_posted_in(); ?> -->
+              <?php hackeryou_posted_in(); ?>
               <?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
             </div><!-- .entry-utility -->
           </div><!-- #post-## -->

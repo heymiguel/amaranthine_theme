@@ -1,6 +1,6 @@
 <footer>
-  <div class="container">
-  photo and layout credit goes here
+  <div class="footer">
+  	<p>photo: <a href="http://pamlau.com/">Pam Lau</a></p> 
   </div>
 </footer>
 

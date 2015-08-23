@@ -1,8 +1,4 @@
-
 <?php 
-
-
-
 get_header(); ?>
 
 <div class="rightPortfolio">
@@ -14,6 +10,7 @@ get_header(); ?>
 
           <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <h1 class="entry-title">
+            <div class="redTriangle"></div>
               <a href="<?php the_permalink(); ?>">
                 <?php the_title(); ?>
               </a> 
@@ -29,8 +26,7 @@ get_header(); ?>
             </div><!-- .entry-content -->
 
             <div class="entry-utility">
-              <!-- <?php hackeryou_posted_in(); ?> -->
-
+              <?php hackeryou_posted_in(); ?>
               <?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
             </div><!-- .entry-utility -->
           </div><!-- #post-## -->

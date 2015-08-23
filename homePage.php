@@ -32,7 +32,7 @@ get_header(); ?>
 			 <div class="leftSide">
 			  	<!-- //background image needed -->
 				<!-- // -->
-				more words
+				
 
 			</div>
 

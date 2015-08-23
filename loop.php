@@ -18,11 +18,12 @@
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<h2 class="entry-title">
+			<div class="redTriangle"></div>
         <a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
           <?php the_title(); ?>
         </a>
       </h2>
-
+		<img src="<?php the_field('item_photo'); ?>">
 			<section class="entry-content">
 				<?php the_content('Continue reading <span class="meta-nav">&rarr;</span>'); ?>
 				<?php wp_link_pages( array(
@@ -32,7 +33,7 @@
 			</section><!-- .entry-content -->
 
 			<footer>
-				<p><?php the_tags('Tags: ', ', ', '<br>'); ?>  <?php the_category(', '); ?></p>
+				<p><?php the_tags(' ', ', ', '<br>'); ?>  <?php the_category(', '); ?></p>
         <p><?php comments_popup_link('reply &raquo;', '1 Response &raquo;', '% Responses &raquo;'); ?></p>
         <p><?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?></p>
 			</footer>

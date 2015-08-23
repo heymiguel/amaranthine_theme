@@ -1,16 +1,30 @@
 <?php get_header(); ?>
+<div class="rightTag">
+	<div class="tagItems">
 
-<div class="main">
-  <div class="container">
+		<div class="content">
+      		<?php get_template_part( 'loop', 'tag' ); ?>
+		</div>
+	</div>
+	<?php get_footer(); ?>
+</div>
 
-    <div class="content">
-      <h1>Tag Archives: <?php single_tag_title(); ?></h1>
-      <?php get_template_part( 'loop', 'tag' ); ?>
-    </div> <!-- /.content -->
+<div class="wrapper clearfix">
+	<div class="main">
 
-<!--     <?php get_sidebar(); ?> -->
+	  <div class="mainSection clearfix">
 
-  </div><!-- /.container -->
-</div><!-- /.main -->
+	    
+	    
 
-<?php get_footer(); ?>
+			 <div class="leftTag">
+			 		<div class="redTextLeft">
+						<h2>Done with: <?php single_tag_title(); ?></h2>
+					</div>
+			</div>
+
+	    
+	  </div> <!-- /.container -->
+
+	</div> <!-- /.main -->
+</div> <!-- wrapper -->

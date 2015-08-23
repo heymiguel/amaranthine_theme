@@ -123,7 +123,7 @@ add_filter( 'excerpt_length', 'hackeryou_excerpt_length' );
  * Returns a "Continue Reading" link for excerpts
  */
 function hackeryou_continue_reading_link() {
-	return ' <a href="'. get_permalink() . '">Continue reading <span class="meta-nav">&rarr;</span></a>';
+	return ' <a href="'. get_permalink() . '">read more<span class="meta-nav"> > </span></a>';
 }
 
 /**
@@ -207,12 +207,12 @@ function hackeryou_posted_in() {
 	// Retrieves tag list of current post, separated by commas.
 	$tag_list = get_the_tag_list( '', ', ' );
 	if ( $tag_list ) {
-		// $posted_in = 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.';
-		$posted_in = 'Tech used: %2$s.';
+		$posted_in = 'Filed under %1$s, using %2$s. ';
+		// $posted_in = '%2$s';
 	} elseif ( is_object_in_taxonomy( get_post_type(), 'category' ) ) {
-		$posted_in = 'This entry was posted in %1$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.';
+		$posted_in = '[%1$s]  <br> <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.';
 	} else {
-		$posted_in = 'Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.';
+		$posted_in = '<a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.';
 	}
 	// Prints the string, replacing the placeholders.
 	printf(
@@ -280,3 +280,15 @@ function amaranthine_customize_register( $wp_customize ) {
 }
 
 add_action( 'customize_register', 'amaranthine_customize_register' );
+
+function add_custom_types_to_tax( $query ) {
+			if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+
+			// Get all your post types
+			$post_types = get_post_types();
+
+			$query->set( 'post_type', $post_types );
+			return $query;
+	}
+}
+add_filter( 'pre_get_posts', 'add_custom_types_to_tax' );
