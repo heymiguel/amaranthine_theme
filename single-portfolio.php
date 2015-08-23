@@ -4,7 +4,7 @@
 get_header(); ?>
 
 <div class="rightSingle">
-  <div class="portfolioItems">
+  <div class="portfolioItems clearfix">
 
     <div class="content">
 

@@ -18,6 +18,9 @@ get_header(); ?>
 		      		<!-- content ends here -->
 		      	<?php endwhile; // end the loop?>
 		      	</div>
+	<div class="photoCredit">
+		<p>photo: <a href="http://pamlau.com/">Pam Lau</a></p> 
+	</div>
 <?php get_footer(); ?> 
 </div>
 			

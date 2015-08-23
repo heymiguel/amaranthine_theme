@@ -91,7 +91,18 @@
 		}
 		.container{
 			footer{
-				//reveal alternative thing here
+				#footerIcons{
+					display: none;
+					position: relative;
+					@include wider-than(large){
+						display: block;
+						.contactForm{
+							position: absolute;
+							bottom: 2em;
+							background: white;
+						}
+					}
+				}
 			}
 		}
 		

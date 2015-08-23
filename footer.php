@@ -1,6 +1,13 @@
 <footer>
-  <div class="footer">
-  	<p>photo: <a href="http://pamlau.com/">Pam Lau</a></p> 
+  <div class="footerForm" id="footerForm">
+  	<div class="socialIcons clearfix" id="footerIcons">
+  	    <button class="contactMe">contact@heymiguel.com</button>
+  	    <i class="fa fa-twitter fa-lg"></i>
+  	    <i class="fa fa-code-fork fa-lg"></i>
+  	    <i class="fa fa-linkedin fa-lg"></i>
+  	    <i class="fa fa-medium fa-lg"></i>
+  	    <form class="contactForm clearfix"> <?php echo do_shortcode('[contact-form-7 id="76" title="Contact form 1"]'); ?></form>          
+  	</div>
   </div>
 </footer>
 

@@ -6,6 +6,17 @@
 	background-size: cover;
 	background-position: center;
 	color: white;
+	@include wider-than(large){
+		width: 100vw;
+		height: 40vh;
+		position: relative;
+	}
+	@include wider-than(medium){
+				
+	}
+	@include wider-than(small){
+		
+	}
 	.redTextLeft{
 	@include emphasis-text;
 		
@@ -14,6 +25,11 @@
 
 .rightSingle{
 		@include right-format;
+		@include wider-than(large){
+			margin-left: 0;
+			width: 100%;
+			margin-top: 40vh;
+		}
 		.portfolioItems
 			.content{
 				@include span-columns(8);
@@ -21,12 +37,13 @@
 				a{
 					color: black;
 					font-size: 14px;
-				}:hover{
+				}
+				a:hover{
 					background: $maincolor;
 					color: white;	
 					transition: all .5s ease-in-out;
 					}
-				}
+	
 			 	.entry-title{
 			 		font-family: 'lato', sans-serif;
 			 		font-weight: 500;
@@ -69,3 +86,4 @@
 			 		bottom: 0;
 			 	}
 			}
+		}

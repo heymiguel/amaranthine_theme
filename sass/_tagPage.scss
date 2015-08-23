@@ -2,17 +2,34 @@
 	@include left-format;
 	background: $maincolor;
 	color: white;
-	.redTextLeft{
-	@include emphasis-text;
+	@include wider-than(large){
+		width: 100vw;
+		height: 25vh;
+	}
+	@include wider-than(medium){
+				
+	}
+	@include wider-than(small){
 		
+	}
+	.redTextLeft{
+		@include emphasis-text;
+		@include wider-than(large){
+			top: 70%;
+		}
 	}
 }
 .rightTag{
 	@include right-format;
+	@include wider-than(large){
+		margin-left: 0;
+		width: 100%;
+		margin-top: 27vh;
+	}
 	footer {
 
 		.footer{
-			display: none;
+			
 		}
 	}
 
@@ -38,6 +55,11 @@
 		 		}
 		 			a{
 						color: black;
+					}
+					a:hover{
+					background: $maincolor;
+					color: white;	
+					transition: all .5s ease-in-out;
 					}
 		 	}
 		 	.entry-content{
