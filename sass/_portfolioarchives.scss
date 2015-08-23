@@ -9,7 +9,7 @@
 		padding: 3%;
 		display: block;
 		width: 100%;
-		height: 40vh;
+		height: 30vh;
 		
 	}
 	.redTextLeft{
@@ -19,7 +19,20 @@
 			width: 100%;
 			margin: 0;
 			transform: none;
-			top: 50%;	
+			top: 21%;	
+		}
+		@include wider-than (small){
+			top: 25%;
+		}
+		h2{
+			@include wider-than(small){
+				font-size: 1.8em;
+			}
+		}
+		p{
+			@include wider-than(small){
+				font-size: .9em;
+			}	
 		}	
 	}
 }
@@ -55,6 +68,7 @@
 			 			@include cssTriangle;
 			 			top: 100%;
 						right: 0;
+					
 			 		}
 			 			a{
 							color: black;
@@ -77,7 +91,7 @@
 		}
 		.container{
 			footer{
-				display: none;
+				//reveal alternative thing here
 			}
 		}
 		

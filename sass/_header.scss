@@ -17,6 +17,9 @@ header {
 			@include cssTriangle;
 			top: 100%;
 			right: 20%;
+			@include wider-than(medium){
+				display: none;
+			}
 		}
 
 		.navLogo {
@@ -69,8 +72,8 @@ header {
 				color: black;
 				width: 100%;
 				@include wider-than(large){
-					text-align:left;
-					padding-bottom: 4%;
+					//fix later 
+					display: none;
 				}
 				button{
 					font-size: 14px;
