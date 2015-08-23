@@ -4,13 +4,15 @@ header {
 		// width: 100%;
 		position: fixed;
 		z-index: 100;
-	.leftHeader {
 
+	.leftHeader {
 		width: 50vw;
 		background: $maincolor;
 		float: left;
 		position: relative;
-
+		@include wider-than(large){
+			width: 100%;
+		}
 		.redTriangle{
 			@include cssTriangle;
 			top: 100%;
@@ -52,25 +54,31 @@ header {
 		background: white;
 		width: 50vw;
 		float: left;
+		@include wider-than(medium){
+			width: 40vw;
+		}
 		//social icon 
 		.socials{
 			margin-top: 2.5%;
-
+			@include wider-than(large){
+				margin-top:0;
+			}
 			.socialIcons {
-
 				text-align: right;
 				padding-right: 3.5%;
 				color: black;
 				width: 100%;
-				
+				@include wider-than(large){
+					text-align:left;
+					padding-bottom: 4%;
+				}
 				button{
 					font-size: 14px;
 					background: none;
 					border: none;
-
-				}:hover{
-					background: $maincolor;
-					color: white;	
+					@include wider-than(medium){
+						display: block;
+					}
 				}
 
 				.fa{
@@ -78,7 +86,8 @@ header {
 					margin-left: 2%;
 					font-size: 18px;
 					
-				}:hover{
+				}
+				.fa:hover{
 					background: $maincolor;
 					color: white;	
 					transition: all .5s ease-in-out;
@@ -119,16 +128,13 @@ header {
 						margin-top: 1%;
 						font-weight: bold;
 					}
-
 				}
-
-
-
-
 			}
 		}
-
 	}	
-
 }
+
+
+
+
 

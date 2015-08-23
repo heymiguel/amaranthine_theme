@@ -9,13 +9,42 @@
 	@include left-format;
 	background: url(images/headshot_PAM_2562.jpg) no-repeat center;
 	background-size: cover;
+	@include wider-than(large){
+		background: none;
+	}
 }
 .rightSide{
 	@include outer-container;
 	@include right-format;
-	
+	@include wider-than(large){
+		display: block;
+		background: url(images/headshot_PAM_2562.jpg) no-repeat center;
+		background-size: cover;
+		margin-left: 0;
+		width: 100%;
+		margin-top: 0;
+	}
 	.mainMessage{
 		@include emphasis-text;
+			@include wider-than(large){
+				margin-left: 4%;
+				width: 35%;
+			}
+			@include wider-than(medium){
+				top: 80%;
+				width: 90%;
+				background: white;
+			}
+		h2{
+			@include wider-than(medium){
+				font-size: 2em;
+			}
+		}
+		p{
+			@include wider-than(medium){
+				font-size: .9em;
+			}
+		}
 	}
 	footer{
 		position: fixed;

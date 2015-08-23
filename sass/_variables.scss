@@ -1,6 +1,11 @@
 // colors
 $maincolor:#B22222;
 $firebrick_rgb: rgb(178,34,34);
+$breakpoints: (
+  small: 480px,
+  medium: 640px,
+  large: 744px
+);
 
 // mixins
 
@@ -113,3 +118,23 @@ $firebrick_rgb: rgb(178,34,34);
 	  transform: scaleX(1);
 	}
 }
+
+/*********************
+BREAKPOINTS
+*********************/
+
+
+
+@mixin wider-than($screen-size) {
+    @if map-has-key($breakpoints, $screen-size) {
+        @media (max-width: map-get($breakpoints, $screen-size)) {
+            @content;
+        }
+    } @else {
+        // Debugging
+        @warn "'#{$screen-size}' has not been declared as a breakpoint."
+    }
+}
+
+
+

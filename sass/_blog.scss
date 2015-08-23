@@ -10,6 +10,9 @@
 
 .rightBlog{
 		@include right-format;
+		footer{
+			display: none;
+		}
 		.blogPosts{
 			.content{
 				@include span-columns(8);
