@@ -2,7 +2,7 @@
 get_header(); ?>
 
 <div class="rightPortfolio">
-  <div class="portfolioItems">
+  <div class="portfolioItems clearfix">
 
     <div class="content">
 

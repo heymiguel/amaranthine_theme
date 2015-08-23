@@ -5,18 +5,41 @@
 	background: none;
 	background: $maincolor;
 	color: white;
+	@include wider-than(large){
+		padding: 3%;
+		display: block;
+		width: 100%;
+		height: 40vh;
+		
+	}
 	.redTextLeft{
 	@include emphasis-text;
-		
+		@include wider-than(large){
+			float: none;
+			width: 100%;
+			margin: 0;
+			transform: none;
+			top: 50%;	
+		}	
 	}
 }
 
 .rightPortfolio{
 		@include right-format;
+		@include wider-than(large){
+			width:100%;
+			height: 100;
+			margin-left: 0;
+			margin-top:0;
+		}
 		.portfolioItems{
 			.content{
 				@include span-columns(9);
 				@include shift(2);
+
+					@include wider-than(large){
+						margin-top: 32vh;
+					}
 				}
 			 	.entry-title{
 			 		font-family: 'lato', sans-serif;
@@ -51,12 +74,11 @@
 						border: $maincolor 2px solid;
 			 		}
 			 	}
-
-			 	footer{
-			 		position: fixed;
-			 		right: 0;
-			 		bottom: 0;
-			 	}
+		}
+		.container{
+			footer{
+				display: none;
+			}
 		}
 		
 }
