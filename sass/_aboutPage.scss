@@ -15,8 +15,6 @@
 
 	}
 	@include right-format;
-	
-
 	@include wider-than(large){
 		display: block;
 		background: url(images/headshot_PAM_2562.jpg) no-repeat center;
@@ -37,6 +35,7 @@
 				line-height: 1.4em;
 				font-size: .9em;
 				font-weight: 300;
+				background: #F7F7F7;
 			}
 		}
 		top: 0%;
@@ -63,7 +62,7 @@
 					.skillName{
 						display: block;
 						text-align: center;
-						font-size: 1.2em;
+						font-size: .9em;
 						padding: none;
 
 					}
