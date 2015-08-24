@@ -5,9 +5,13 @@ footer {
 	@include contactForm;
 	a{
 		color: black;
+		@include wider-than(medium){
+			display: inline-flex;
+		}
 
 	}
 	a:visited{
 		color: black;
 	}
+
 }

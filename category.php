@@ -26,7 +26,7 @@
 
        <div class="leftCategory">
           <div class="redTextLeft">
-            <h1>Category Archives: <?php single_cat_title(); ?></h1>
+            <h1> [<?php single_cat_title(); ?>]</h1>
           </div>
       </div>
 

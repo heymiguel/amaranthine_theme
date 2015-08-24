@@ -1,0 +1,172 @@
+// home page styles
+.leftAbout{
+	@include left-format;
+	background: url(images/headshot_PAM_2562.jpg) no-repeat center;
+	background-size: cover;
+	@include wider-than(large){
+		
+		display: none;
+	}
+}
+.rightAbout{
+
+	@include outer-container;
+	.container{
+
+	}
+	@include right-format;
+	
+
+	@include wider-than(large){
+		display: block;
+		background: url(images/headshot_PAM_2562.jpg) no-repeat center;
+		background-size: cover;
+		margin-left: 0;
+		width: 100%;
+		height: 100vh;
+		margin-top: 0;
+	}
+	.mainMessage{
+		@include emphasis-text;
+		@include justTheForm;
+		.contactForm{
+			margin-bottom: 8%;
+		}
+		.blurb{
+			blockquote{
+				line-height: 1.4em;
+				font-size: .9em;
+				font-weight: 300;
+			}
+		}
+		top: 0%;
+		transform: none;
+		h3{
+			margin: 4% 0;
+			border-bottom: $maincolor 1px solid;
+		}
+			.skills{
+				display: flex;
+				flex-wrap: wrap;
+				.iconBox{
+					width: 33%; 
+					margin-bottom: 4%;
+					.devicons{
+						//try red border
+						display: block;
+						background: #F7F7F7;
+						color: $maincolor;
+						text-align: center;
+						margin: 3%;
+						font-size: 80px;	
+					}
+					.skillName{
+						display: block;
+						text-align: center;
+						font-size: 1.2em;
+						padding: none;
+
+					}
+				}
+			}
+			.working{
+				display: flex;
+				flex-direction: column;
+				.workingBox{
+					margin: 1% 0;
+					line-height: 1.4em;
+					font-size: .9em;
+					font-weight: 300;
+					.devicons{
+						float: left;
+						width: 33%;
+						font-size: 80px;
+						color: $maincolor;
+						background: #F7F7F7;
+						text-align: center;
+					}
+					.workingDescription{
+						width: 65%;
+						margin-left: 1%;
+						float: left;
+					}
+				}
+				
+			}
+			@include wider-than(large){
+				margin-left: 4%;
+				width: 35%;
+				top: 60%;
+				.blurb{
+
+				}
+				.skills{
+
+				}
+				.working{
+
+				}
+			}
+			@include wider-than(medium){
+				top: 110%;
+				width: 100%;
+				margin: 0;
+				background: white;
+				.blurb{
+					
+				}
+				.skills{
+
+				}
+				.working{
+
+				}
+			}
+			@include wider-than(small){
+				width: 100%;
+				padding: 4%;
+				margin: 0;
+				top: 110%;
+				.blurb{
+					
+				}
+				.skills{
+
+				}
+				.working{
+
+				}
+			}
+		h2{
+			@include wider-than(medium){
+				font-size: 2em;
+			}
+		}
+		p{
+			@include wider-than(medium){
+				font-size: .9em;
+			}
+
+		}
+
+	}
+
+	.photoCredit{
+		position: fixed;
+		z-index: 100;
+		left: 0;
+		bottom: 0;
+		font-size: 10px;
+		color: grey;
+		margin: 1%;
+		a{
+			color: grey;
+		}
+		@include wider-than(medium){
+			display: none;
+		}
+		@include wider-than(small){
+			display: none;
+		}	
+	}
+}

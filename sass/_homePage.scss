@@ -16,13 +16,14 @@
 			#footerIcons{
 				display: none;
 				position: relative;
+
 				@include wider-than(large){
 					display: block;
 					button.contactMe{
 						display: block;
 						text-align: right;
 					}
-					
+
 					.contactForm{
 						position: absolute;
 						bottom: 2.2em;
@@ -32,8 +33,14 @@
 				@include wider-than(medium){
 					button.contactMe{
 						display: inline;
-						
 					}
+				}
+				@include wider-than(small){
+					a{
+						display: inline-flex;
+						margin: 0 1%;	
+					}
+					
 				}
 			}
 		}
@@ -45,19 +52,29 @@
 		background-size: cover;
 		margin-left: 0;
 		width: 100%;
+		height: 100vh;
 		margin-top: 0;
 		
 	}
 	.mainMessage{
 		@include emphasis-text;
+
 			@include wider-than(large){
 				margin-left: 4%;
 				width: 35%;
+				top: 60%;
 			}
 			@include wider-than(medium){
-				top: 80%;
-				width: 90%;
+				top: 110%;
+				width: 100%;
+				margin: 0;
 				background: white;
+			}
+			@include wider-than(small){
+				width: 100%;
+				padding: 4%;
+				margin: 0;
+				top: 110%;
 			}
 		h2{
 			@include wider-than(medium){
@@ -68,7 +85,9 @@
 			@include wider-than(medium){
 				font-size: .9em;
 			}
+
 		}
+
 	}
 
 	.photoCredit{
@@ -82,5 +101,11 @@
 		a{
 			color: grey;
 		}
+		@include wider-than(medium){
+			display: none;
+		}
+		@include wider-than(small){
+			display: none;
+		}	
 	}
 }

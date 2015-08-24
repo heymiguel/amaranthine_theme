@@ -25,13 +25,17 @@
 			top: 25%;
 		}
 		h2{
+			margin-top: 2%;
 			@include wider-than(small){
 				font-size: 1.8em;
 			}
 		}
 		p{
-			@include wider-than(small){
+			@include wider-than(medium){
 				font-size: .9em;
+			}
+			@include wider-than(small){
+				display: none;
 			}	
 		}	
 	}
@@ -49,6 +53,7 @@
 			.content{
 				@include span-columns(9);
 				@include shift(2);
+				padding-bottom: 4%;
 				.liveLink{
 					font-size: 1.3em;
 					display: block;

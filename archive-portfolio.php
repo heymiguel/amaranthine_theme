@@ -1,4 +1,8 @@
 <?php 
+
+/*
+  Template Name: portfolio archive
+*/
 get_header(); ?>
 
 <div class="rightPortfolio">

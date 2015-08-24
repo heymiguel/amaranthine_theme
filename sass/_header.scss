@@ -31,11 +31,14 @@ header {
 			text-transform: uppercase;
 			img{
 				max-width: 75px;
+				@include wider-than(small){
+					max-width: 50px;
+				}
 			}
+
 		}
 
 		ul.menu {
-				
 			text-align: right;
 			padding: 0px;
 			margin-right: 2%;
@@ -43,6 +46,10 @@ header {
 			font-weight: 300;
 			font-size: 18px;
 			float: right;
+			@include wider-than(small){
+				font-weight: 300;
+				font-size: 14px;
+			}
 
 			li {
 				display: inline;

@@ -10,6 +10,7 @@
   
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+  <link href='http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,500,700|Lato:400,300,300italic,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
 
   <?php wp_head(); ?>

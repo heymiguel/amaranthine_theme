@@ -219,7 +219,44 @@ $breakpoints: (
 	}
 }
 
+@mixin justTheForm{
+	.contactForm{
+		
+		font-size: .8rem;
+		border: none;
+		:nth-child(5){
+			width: 100%;
+		}
 
+		.wpcf7-form-control{
+			width: 100%;
+			border: none;
+			border-bottom: $maincolor 1px dotted;
+		}
+
+		.wpcf7-textarea{
+			height: 5vh;
+			width: 95%;
+		}
+
+		p{
+			text-align: left;
+			float: left;
+			width: 45%;
+			margin-left: 2%;
+		}
+
+		.wpcf7-submit{
+			border: $maincolor 2px solid;
+			background:$maincolor;
+			color: white;
+			width: 35%;
+			padding: 2%;
+			margin-top: 1%;
+			font-weight: 400;
+		}
+	}
+}
 
 /*********************
 BREAKPOINTS
