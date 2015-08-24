@@ -210,7 +210,7 @@ function hackeryou_posted_in() {
 		$posted_in = 'Filed under %1$s, using %2$s. ';
 		// $posted_in = '%2$s';
 	} elseif ( is_object_in_taxonomy( get_post_type(), 'category' ) ) {
-		$posted_in = '[%1$s]  <br> <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.';
+		$posted_in = 'Filed under [%1$s]  <br> <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.';
 	} else {
 		$posted_in = '<a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.';
 	}

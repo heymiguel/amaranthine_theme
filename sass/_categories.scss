@@ -2,6 +2,16 @@
 	@include left-format;
 	background: $maincolor;
 	color: white;
+	@include wider-than(large){
+		width: 100vw;
+		height: 25vh;
+	}
+	@include wider-than(medium){
+				
+	}
+	@include wider-than(small){
+		
+	}
 	.redTextLeft{
 	@include emphasis-text;
 		
@@ -9,8 +19,13 @@
 }
 .rightCategory{
 	@include right-format;
-	footer .container{
-		display: none;
+	.container{
+		@include hiddenBottomFooter;
+	}
+	@include wider-than(large){
+		margin-left: 0;
+		width: 100%;
+		margin-top: 27vh;
 	}
 
 
@@ -36,12 +51,35 @@
 		 			a{
 						color: black;
 					}
+					a:hover{
+					background: $maincolor;
+					color: white;	
+					transition: all .5s ease-in-out;
+					}
 		 	}
 		 	.entry-content{
 		 		font-family: 'lato', sans-serif;
 		 		font-weight: 300;
 		 		line-height: 1.4em;
 		 	}
+		 	footer{
+		 		p:nth-child(1){
+		 				
+		 					color: white;
+		 					a{
+		 						color: black;
+		 						border-bottom: 1px solid $maincolor;
+		 					}
+		 					a:hover{
+		 						background: $maincolor;
+		 						color: white;	
+		 						transition: all .5s ease-in-out;
+		 						}
+		 				
+		 	 			
+		 	 		}
+		 	}
+
 
 		}
 

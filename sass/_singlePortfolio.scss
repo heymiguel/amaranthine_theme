@@ -37,6 +37,14 @@
 			.content{
 				@include span-columns(8);
 				@include shift(2);
+				.liveLink{
+					font-size: 1.2em;
+					display: block;
+					margin-bottom: 1.2em;
+					a{
+						font-size: 1.2em;
+					}
+				}
 				a{
 					color: black;
 					font-size: 14px;

@@ -1,20 +1,43 @@
 // home page styles
-
-
-.mainSection{
-
-}
-
 .leftSide{
 	@include left-format;
 	background: url(images/headshot_PAM_2562.jpg) no-repeat center;
 	background-size: cover;
 	@include wider-than(large){
-		background: none;
+		
+		display: none;
 	}
 }
 .rightSide{
+
 	@include outer-container;
+	.container{
+		footer{
+			#footerIcons{
+				display: none;
+				position: relative;
+				@include wider-than(large){
+					display: block;
+					button.contactMe{
+						display: block;
+						text-align: right;
+					}
+					
+					.contactForm{
+						position: absolute;
+						bottom: 2.2em;
+						background: white;
+					}
+				}
+				@include wider-than(medium){
+					button.contactMe{
+						display: inline;
+						
+					}
+				}
+			}
+		}
+	}
 	@include right-format;
 	@include wider-than(large){
 		display: block;
@@ -23,6 +46,7 @@
 		margin-left: 0;
 		width: 100%;
 		margin-top: 0;
+		
 	}
 	.mainMessage{
 		@include emphasis-text;
@@ -46,9 +70,7 @@
 			}
 		}
 	}
-	footer{
-		display: none;
-	}
+
 	.photoCredit{
 		position: fixed;
 		z-index: 100;

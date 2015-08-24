@@ -26,6 +26,7 @@ get_header(); ?>
             </div><!-- .entry-content -->
 
             <div class="entry-utility">
+            <strong class="liveLink"><a href="<?php the_field("livelink") ?>">see it live</a></strong>
               <?php hackeryou_posted_in(); ?>
               <?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
             </div><!-- .entry-utility -->

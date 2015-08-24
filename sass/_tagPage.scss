@@ -72,11 +72,18 @@
 		 	}
 			footer{
 				p:nth-child(1){
-						a{
+						
 							color: white;
-							background: $maincolor;
-							border: $maincolor 2px solid;	
-						}
+							a{
+								color: black;
+								border-bottom: 1px solid $maincolor;
+							}
+							a:hover{
+								background: $maincolor;
+								color: white;	
+								transition: all .5s ease-in-out;
+								}
+						
 			 			
 			 		}
 			}

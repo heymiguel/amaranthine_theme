@@ -49,7 +49,11 @@
 			.content{
 				@include span-columns(9);
 				@include shift(2);
-
+				.liveLink{
+					font-size: 1.3em;
+					display: block;
+					margin-bottom: 1.2em;
+				}
 					@include wider-than(large){
 						margin-top: 32vh;
 					}
@@ -83,10 +87,14 @@
 			 		font-size: .8em;
 			 		margin-top: 1%;
 			 		a{
-			 			color: white;
-						background: $maincolor;
-						border: $maincolor 2px solid;
+			 			color: black;
+			 			border-bottom: 1px solid $maincolor;
 			 		}
+			 		a:hover{
+			 			background: $maincolor;
+			 			color: white;	
+			 			transition: all .5s ease-in-out;
+			 			}
 			 	}
 		}
 		.container{

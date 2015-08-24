@@ -12,7 +12,9 @@
               ?>
     </div>
   </div>
-  <?php get_footer(); ?>
+  <div class="container">
+    <?php get_footer(); ?>
+  </div>
 </div>
 
 <div class="wrapper clearfix">

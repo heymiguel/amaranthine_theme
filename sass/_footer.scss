@@ -3,4 +3,11 @@ footer {
 }
 #footerForm{
 	@include contactForm;
+	a{
+		color: black;
+
+	}
+	a:visited{
+		color: black;
+	}
 }
