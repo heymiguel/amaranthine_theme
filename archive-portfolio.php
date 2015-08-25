@@ -9,9 +9,8 @@ get_header(); ?>
   <div class="portfolioItems clearfix">
 
     <div class="content">
-
         <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
+        
           <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <h1 class="entry-title">
             <div class="redTriangle"></div>

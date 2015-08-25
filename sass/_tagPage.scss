@@ -39,8 +39,8 @@
 
 	.tagItems{
 		.content{
-			@include span-columns(9);
-			@include shift(2);
+			@include span-columns(10);
+			@include shift(1);
 			}
 		 	.entry-title{
 		 		font-family: 'lato', sans-serif;

@@ -35,8 +35,8 @@
 		}
 		.portfolioItems
 			.content{
-				@include span-columns(8);
-				@include shift(2);
+				@include span-columns(10);
+				@include shift(1);
 				.liveLink{
 					font-size: 1.2em;
 					display: block;
@@ -58,6 +58,8 @@
 			 	.entry-title{
 			 		font-family: 'lato', sans-serif;
 			 		font-weight: 500;
+			 		letter-spacing: 1.5px;
+			 		text-transform: uppercase;
 			 		color: black;
 			 		padding: 4%;
 			 		padding-left: 0;
@@ -72,7 +74,36 @@
 			 		font-weight: 300;
 			 		line-height: 1.4em;
 			 		margin-top: 1%;
+			 		background: #F7F7F7;
 			 	}
+
+			 	.entry-utility{
+			 		font-size: .8em;
+			 		margin-top: 1%;
+
+			 			a{
+			 				color: black;
+			 				padding: 1%;
+			 				border: 1px dashed $maincolor;
+			 				background: #F7F7F7;
+			 				margin-bottom: 2%;
+							text-transform: uppercase;
+							font-weight: 700;
+							letter-spacing: 1px;
+							line-height: 2.5em;
+			 			}.permalink{
+			 					border: 1px dotted black;
+			 					background: none;
+			 				}
+			 			a:hover{
+			 				background: $maincolor;
+			 				text-transform: uppercase;
+			 				background: $maincolor;
+			 				color: white;	
+			 				border: 1px dashed white;
+			 				transition: all .5s ease-in-out;
+			 				}
+			 		}
 				.navigation{
 
 					a{

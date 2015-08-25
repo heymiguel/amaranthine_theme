@@ -46,6 +46,7 @@
 		}
 	}
 	@include right-format;
+	height: 80vh;
 	@include wider-than(large){
 		display: block;
 		background: url(images/headshot_PAM_2562.jpg) no-repeat center;

@@ -205,19 +205,19 @@ if ( ! function_exists( 'hackeryou_posted_in' ) ) :
  */
 function hackeryou_posted_in() {
 	// Retrieves tag list of current post, separated by commas.
-	$tag_list = get_the_tag_list( '', ', ' );
+	$tag_list = get_the_tag_list( '', ' ' );
 	if ( $tag_list ) {
-		$posted_in = 'Filed under %1$s, using %2$s. ';
+		$posted_in = ' <p> %2$s.</p> <br> <p>Filed under %1$s</p> <br> <br>  ';
 		// $posted_in = '%2$s';
 	} elseif ( is_object_in_taxonomy( get_post_type(), 'category' ) ) {
-		$posted_in = 'Filed under [%1$s]  <br> <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.';
+		$posted_in = 'Filed under %1$s  <a href="%3$s" title="Permalink to %4$s" rel="bookmark" class="permalink">permalink</a>.';
 	} else {
-		$posted_in = '<a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.';
+		$posted_in = ' <a href="%3$s" class="permalink" title="Permalink to %4$s" rel="bookmark">permalink</a>.';
 	}
 	// Prints the string, replacing the placeholders.
 	printf(
 		$posted_in,
-		get_the_category_list( ', ' ),
+		get_the_category_list( ' ' ),
 		$tag_list,
 		get_permalink(),
 		the_title_attribute( 'echo=0' )
