@@ -4,7 +4,7 @@ $(function(){
 	});
 });
 
-portfolioScroll = $("").fadeTo(0, 0);
+portfolioScroll = $(".portfolio").fadeTo(0, 0);
 
 $(window).scroll(function(d,h) {
     portfolioScroll.each(function(i) {
