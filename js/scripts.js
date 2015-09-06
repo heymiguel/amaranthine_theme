@@ -1,7 +1,7 @@
 $(function(){
-	$( ".contactMe" ).click(function() {
-  		$( ".contactForm" ).slideToggle( "fast" );
-	});
+	// $( ".contactMe" ).click(function() {
+ //  		$( ".contactForm" ).slideToggle( "fast" );
+	// });
 });
 
 portfolioScroll = $(".portfolio").fadeTo(0, 0);

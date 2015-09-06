@@ -52,12 +52,12 @@
             
            
             <div class="socialIcons clearfix">
-                <button class="contactMe">contact@heymiguel.com</button>
+                <button class=""><a href="mailto:contact@heymiguel.com">contact@heymiguel.com</a></button>
                 <a href="http://twitter.com/heyheymiguel"><i class="fa fa-twitter fa-lg"></i></a>
                 <a href="http://github.com/heymiguel"><i class="fa fa-code-fork fa-lg"></i></a>
                 <a href="https://ca.linkedin.com/in/heymiguel"><i class="fa fa-linkedin fa-lg"></i></a>
                 <a href="http://medium.com/@heymiguel"><i class="fa fa-medium fa-lg"></i></a>
-                <form class="contactForm clearfix"> <?php echo do_shortcode('[contact-form-7 id="76" title="Contact form 1"]'); ?></form>          
+                <!-- <form class="contactForm clearfix"> <?php echo do_shortcode('[contact-form-7 id="76" title="Contact form 1"]'); ?></form>           -->
             </div>
        </div> 
       </div>

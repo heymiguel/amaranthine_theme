@@ -1,7 +1,7 @@
 <footer>
   <div class="footerForm" id="footerForm">
   	<div class="socialIcons clearfix" id="footerIcons">
-  	    <button class="contactMe">contact@heymiguel.com</button>
+  	    <button class="contactMe"><a href="mailto:contact@heymiguel.com">contact@heymiguel.com</a></button>
   	    <a href="http://twitter.com/heyheymiguel"><i class="fa fa-twitter fa-lg"></i></a>
   	    <a href="http://github.com/heymiguel"><i class="fa fa-code-fork fa-lg"></i></a>
   	    <a href="https://ca.linkedin.com/in/heymiguel"><i class="fa fa-linkedin fa-lg"></i></a>

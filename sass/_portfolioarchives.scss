@@ -6,11 +6,7 @@
 	background: $maincolor;
 	color: white;
 	@include wider-than(large){
-		padding: 3%;
-		display: block;
-		width: 100%;
-		height: 30vh;
-		
+		display: none;
 	}
 	.redTextLeft{
 	@include emphasis-text;
@@ -61,7 +57,7 @@
 
 				}
 					@include wider-than(large){
-						margin-top: 32vh;
+						margin-top: 10vh;
 					}
 				}
 			 	.entry-title{
